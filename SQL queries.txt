@@ -1,0 +1,51 @@
+create schema jobs;
+use jobs;
+
+
+CREATE TABLE applications (
+  appid int AUTO_INCREMENT PRIMARY KEY,
+  fname varchar(255),
+  lname varchar(255),
+  contact_no varchar(255),
+  email varchar(255),
+  experience varchar(255),
+  resumeid int,
+  job_seeker_id int,
+  pid int
+);
+
+CREATE TABLE job_seekers (
+  job_seeker_id int AUTO_INCREMENT PRIMARY KEY,
+  contact_no varchar(255),
+  fname varchar(255),
+  lname varchar(255),
+  user_id int
+);
+
+CREATE TABLE positions (
+  pid int AUTO_INCREMENT PRIMARY KEY,
+  name varchar(255),
+  company varchar(255),
+  salary varchar(255),
+  experience varchar(255),
+  location varchar(255),
+  recruiter_id int
+);
+
+CREATE TABLE positions (
+  pid int AUTO_INCREMENT PRIMARY KEY,
+  name varchar(255),
+  company varchar(255),
+  salary varchar(255),
+  experience varchar(255),
+  location varchar(255),
+  recruiter_id int
+);
+
+CREATE TABLE users (
+  user_id int AUTO_INCREMENT PRIMARY KEY,
+  email varchar(255),
+  password varchar(255),
+  role varchar(255)
+);
+
