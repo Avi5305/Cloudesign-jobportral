@@ -32,14 +32,18 @@ CREATE TABLE positions (
   recruiter_id int
 );
 
-CREATE TABLE positions (
-  pid int AUTO_INCREMENT PRIMARY KEY,
-  name varchar(255),
-  company varchar(255),
-  salary varchar(255),
-  experience varchar(255),
-  location varchar(255),
-  recruiter_id int
+CREATE TABLE resumes (
+  resumeid INT PRIMARY KEY AUTO_INCREMENT,
+  resume VARBINARY(255)
+);
+
+CREATE TABLE recruiters (
+  recruiter_id INT PRIMARY KEY AUTO_INCREMENT,
+  contact_no VARCHAR(255),
+  fname VARCHAR(255),
+  lname VARCHAR(255),
+  position VARCHAR(255),
+  user_id INT
 );
 
 CREATE TABLE users (
