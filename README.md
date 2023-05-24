@@ -1,6 +1,8 @@
 # Cloudesign-jobportral
 
 
+
+Firts we have to run the sql query in mysql which is provided in  "SQL queries" file
 The clouddigital_react folder contains the code for the frontend 
 To run the application first we have to run the command "npm i" to install the node_modules
 the "npm start" to run 
